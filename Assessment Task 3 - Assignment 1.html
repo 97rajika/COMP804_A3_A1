@@ -1,0 +1,643 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>Assessment Task 3 - Assignment 1</title>
+  <script>
+    // Task 4 JavaScript below
+
+    var task4ClickedButton = "";
+
+    function task4CatButtonClicked() {
+      task4ClickedButton = "cat";
+      task4ClickButton();
+    }
+
+    function task4DogButtonClicked() {
+      task4ClickedButton = "dog";
+      task4ClickButton();
+    }
+
+    function task4FrogButtonClicked() {
+      task4ClickedButton = "frog";
+      task4ClickButton();
+    }
+
+    function task4ClickButton() {
+      var task4CatButton = document.getElementById("task4CatButton");
+      var task4DogButton = document.getElementById("task4DogButton");
+      var task4FrogButton = document.getElementById("task4FrogButton");
+      var task4Input = document.getElementById("task4Input");
+      var task4Text = document.getElementById("task4Text");
+      var task4Image = document.getElementById("task4Image");
+
+      if (task4ClickedButton == "cat") {
+        task4CatButton.style.backgroundColor = "indigo";
+        task4CatButton.style.color = "white";
+        task4DogButton.style.backgroundColor = "";
+        task4DogButton.style.color = "";
+        task4FrogButton.style.backgroundColor = "";
+        task4FrogButton.style.color = "";
+
+        task4Input.value = "User clicks cat";
+        task4Text.innerHTML = "Cat is clicked";
+        task4Image.src = "Cat.png"; // Generated using Microsoft Bing AI. Source = https://copilot.microsoft.com/images/create/a-cat/1-65dc135a8f054080b30c136512ce14fd?id=RPwZq38O4PXN9U%2B6V9U4%2FQ%3D%3D&view=detailv2&idpp=genimg&idpclose=1&thId=OIG4.1dkkOweEAbCchTDitizU&ineditshare=1
+        task4Image.alt = "Cat Image";
+      }
+      else if (task4ClickedButton == "dog") {
+        task4CatButton.style.backgroundColor = "";
+        task4CatButton.style.color = "";
+        task4DogButton.style.backgroundColor = "indigo";
+        task4DogButton.style.color = "white";
+        task4FrogButton.style.backgroundColor = "";
+        task4FrogButton.style.color = "";
+
+        task4Input.value = "User clicks dog";
+        task4Text.innerHTML = "Dog is clicked";
+        task4Image.src = "Dog.png"; // Generated using Microsoft Bing AI. Source = https://copilot.microsoft.com/images/create/a-cute-puppy/1-65dc1473905345feaf62875832b13300?id=nAkIFQKElM7FBGn2zt7wLg%3D%3D&view=detailv2&idpp=genimg&idpclose=1&thId=OIG2.dAEw0ukr9Dvqh6ynS.rV&ineditshare=1
+        task4Image.alt = "Dog Image";
+      }
+      else if (task4ClickedButton == "frog") {
+        task4CatButton.style.backgroundColor = "";
+        task4CatButton.style.color = "";
+        task4DogButton.style.backgroundColor = "";
+        task4DogButton.style.color = "";
+        task4FrogButton.style.backgroundColor = "indigo";
+        task4FrogButton.style.color = "white";
+
+        task4Input.value = "User clicks frog";
+        task4Text.innerHTML = "Frog is clicked";
+        task4Image.src = "Frog.png"; // Generated using Microsoft Bing AI. Source = https://copilot.microsoft.com/images/create/a-frog/1-65dc14ff1a4d48ccb4c7e1a69f6ef8c5?id=btFKUT84azSp7xbM0QwpaQ%3D%3D&view=detailv2&idpp=genimg&idpclose=1&thId=OIG2.qihBF0W6wp7SMvkJCMVG&ineditshare=1
+        task4Image.alt = "Frog Image";
+      }
+    }
+  </script>
+  <style>
+    .nonTask,
+    .taskHead {
+      font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    }
+
+    .taskHead {
+      margin-top: 70px;
+      color: green;
+    }
+
+    /* Task 1 CSS below */
+
+    .task1Div {
+      padding-left: 20px;
+      background-color: lightskyblue;
+      border-style: dotted;
+      width: 50%;
+      color: navy;
+      font-size: 20px;
+      font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    }
+
+    #task1Head1 {
+      padding-top: 20px;
+    }
+
+    #task1Head3 {
+      padding-bottom: 20px;
+    }
+
+    /* Task 2 CSS below */
+
+    #task2Table {
+      text-align: left;
+      border-style: dotted;
+      font-family: Verdana, Geneva, Tahoma, sans-serif
+    }
+
+    #task2ActivityTableHead {
+      width: 600px;
+    }
+
+    #task2DateTableHead {
+      width: 300px;
+    }
+
+    #task2Table th {
+      background-color: indigo;
+      color: white;
+      font-style: italic;
+    }
+
+    #task2Table td {
+      color: darkgreen;
+    }
+
+    #task2Table tr:nth-child(odd) {
+      background-color: lightpink;
+    }
+
+    #task2Table th,
+    #task2Table td {
+      padding: 10px;
+    }
+
+    /* Task 3 CSS below */
+
+    #task3Table,
+    #task3Table td,
+    #task3Table th {
+      border: 1px solid black;
+      font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    }
+
+    #task3Table img {
+      width: 100px;
+      padding-top: 10px;
+      padding-bottom: 10px;
+    }
+
+    #task3Table th {
+      background-color: indigo;
+      color: white;
+      font-size: 25px;
+    }
+
+    #task3Table td {
+      padding: 10px;
+    }
+
+    #task3Table tr:nth-child(odd) {
+      background-color: lightpink;
+    }
+
+    .task3Question {
+      font-style: bold;
+      font-size: 18px;
+      line-height: 30px;
+    }
+
+    .task3Source {
+      font-style: italic;
+    }
+
+    .task3AttackName {
+      font-size: 20px;
+      font-weight: bold;
+    }
+
+    /* Task 4 CSS below */
+
+    #task4Image {
+      width: 400px;
+    }
+
+    .task4Button {
+      background-color: lightpink;
+      border: 1px solid black;
+      cursor: pointer;
+    }
+
+    .task4Button,
+    #task4Input,
+    #task4Text {
+      font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+      font-size: 17px;
+    }
+  </style>
+</head>
+
+<body>
+  <h1 class="nonTask">Assessment Task 3 - Assignment 1</h1>
+  <h2 class="nonTask">Rajika Subasinghe Arachchige, Student ID: 5477050</h2>
+
+  <!-- Task 1 HTML below -->
+
+  <h1 class="taskHead">Task 1</h1>
+
+  <div class="task1Div">
+    <h2 id="task1Head1">5477050 Rajika Subasinghe Arachchige</h2>
+    <h2 id="task1Head2">COMP804: Web Security</h2>
+    <h2 id="task1Head3">Assignment 1, due at the end of Week 5</h2>
+  </div>
+
+  <!-- Task 2 HTML below -->
+
+  <h1 class="taskHead">Task 2</h1>
+
+  <table id="task2Table">
+    <tr>
+      <th id="task2ActivityTableHead">Activity</th>
+      <th id="task2DateTableHead">Date</th>
+    </tr>
+    <tr>
+      <td>First day to enrol for re-enrolling (continuing students)</td>
+      <td>21 Nov 2022</td>
+    </tr>
+    <tr>
+      <td>Orientation</td>
+      <td>18 Jul 2023</td>
+    </tr>
+    <tr>
+      <td>Lectures Commence (weeks 1-9)</td>
+      <td>24 Jul - 22 Sep 2023</td>
+    </tr>
+    <tr>
+      <td>Last day to enrol / add subjects yourself</td>
+      <td>04 Aug 2023</td>
+    </tr>
+    <tr>
+      <td>Last day to enrol / add subjects with Head of Students approval</td>
+      <td>11 Aug 2023</td>
+    </tr>
+    <tr>
+      <td>
+        <p><strong>CENSUS DATE</strong></p>
+        <ul>
+          <li>Fees due</li>
+          <li>Last day to withdraw from subject/s without paying for them</li>
+          <li>HECS / FEE HELP debt reporting date</li>
+          <li>Last day to change HECS / FEE HELP billing option</li>
+        </ul>
+        <p>
+          <a href="https://uowedu.service-now.com/kb?id=kb_article_view&sysparm_article=KB0012659" target="_blank">Learn
+            more about
+            Census date >
+          </a>
+        </p>
+      </td>
+      <td>31 Aug 2023</td>
+    <tr>
+      <td>Student Services and Amenities Fees Due</td>
+      <td>01 Sep 2023</td>
+    </tr>
+    </tr>
+  </table>
+
+  <!-- Task 3 HTML below -->
+
+  <h1 class="taskHead">Task 3</h1>
+
+  <table id="task3Table">
+    <tr>
+      <th>
+        Name
+      </th>
+      <th>
+        Web Attacks
+      </th>
+    </tr>
+    <tr>
+      <td>
+        <span class="task3AttackName">Broken Access Control</span>
+        <br />
+        <img src="Broken Access Control.png" alt="Broken Access Control Image" />
+        <!-- Image Source = https://owasp.org/Top10/assets/TOP_10_Icons_Final_Broken_Access_Control.png -->
+        <br />
+        <span class="task3Source">Source: </span>
+        <a href="https://owasp.org/Top10/A01_2021-Broken_Access_Control/" target="_blank">Broken Access
+          Control</a>
+      </td>
+      <td>
+        <span class="task3Question">What is it?</span>
+        <br />
+        Broken Access Control is a security vulnerability that allows users to gain unauthorised access to areas of an
+        application that they were not meant to have access to.
+        <br />
+        <span class="task3Question">How can it occur?</span>
+        <br />
+        Broken Access Control can occur due to flaws in the design or implementation of access control mechanisms,
+        whereby access is granted to unintended users.
+        <br />
+        <span class="task3Question">How to prevent it?</span>
+        <br />
+        To prevent Broken Access Control, implement and thoroughly test the access control mechanisms that have been
+        put in place before deploying the application.
+        <br /><br />
+        <span class="task3Source">Source:
+          <a href="https://owasp.org/Top10/A01_2021-Broken_Access_Control/"
+            target="_blank">https://owasp.org/Top10/A01_2021-Broken_Access_Control/</a>
+        </span>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <span class="task3AttackName">Cryptographic Failures</span>
+        <br />
+        <img src="Cryptographic Failures.png" alt="Cryptographic Failures Image" />
+        <!-- Image Source = https://owasp.org/Top10/assets/TOP_10_Icons_Final_Crypto_Failures.png -->
+        <br />
+        <span class="task3Source">Source:
+          <a href="https://owasp.org/Top10/A02_2021-Cryptographic_Failures/" target="_blank">Cryptographic
+            Failures</a>
+        </span>
+      </td>
+      <td>
+        <span class="task3Question">What is it?</span>
+        <br />
+        Cryptographic Failures is a security vulnerability where there is a failure in the use of cryptographic
+        algorithms.
+        <br />
+        <span class="task3Question">How can it occur?</span>
+        <br />
+        Cryptographic Failures can occur due to failures in the design or implementation of cryptographic algorithms or
+        due to using weak cryptographic algorithms.
+        <br />
+        <span class="task3Question">How to prevent it?</span>
+        <br />
+        To prevent Cryptographic Failures, use up-to-date and strong cryptographic algorithms and random, non-default
+        keys.
+        <br /><br />
+        <span class="task3Source">Source:
+          <a href="https://owasp.org/Top10/A02_2021-Cryptographic_Failures/"
+            target="_blank">https://owasp.org/Top10/A02_2021-Cryptographic_Failures/</a>
+        </span>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <span class="task3AttackName">Injection</span>
+        <br />
+        <img src="Injection.png" alt="Injection Image" />
+        <!-- Image Source = https://owasp.org/Top10/assets/TOP_10_Icons_Final_Injection.png -->
+        <br />
+        <span class="task3Source">Source:
+          <a href="https://owasp.org/Top10/A03_2021-Injection/" target="_blank">Injection</a>
+        </span>
+      </td>
+      <td>
+        <span class="task3Question">What is it?</span>
+        <br />
+        Injection is a security vulnerability where untrusted data is sent to the application from the user, such as via
+        a user input field.
+        <br />
+        <span class="task3Question">How can it occur?</span>
+        <br />
+        Injection can occur when input data from the user is not sanitised or validated before being transmitted to the
+        application.
+        <br />
+        <span class="task3Question">How to prevent it?</span>
+        <br />
+        To prevent Injection, user input data should be sanitised and validated before being transmitted to the
+        application.
+        <br /><br />
+        <span class="task3Source">Source:
+          <a href="https://owasp.org/Top10/A03_2021-Injection/"
+            target="_blank">https://owasp.org/Top10/A03_2021-Injection/</a>
+        </span>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <span class="task3AttackName">Insecure Design</span>
+        <br />
+        <img src="Insecure Design.png" alt="Insecure Design Image" />
+        <!-- Image Source = https://owasp.org/Top10/assets/TOP_10_Icons_Final_Insecure_Design.png -->
+        <br />
+        <span class="task3Source">Source:
+          <a href="https://owasp.org/Top10/A04_2021-Insecure_Design/" target="_blank">Insecure Design</a>
+        </span>
+      </td>
+      <td>
+        <span class="task3Question">What is it?</span>
+        <br />
+        Insecure Design is a security vulnerability whereby the application has design and architectural flaws.
+        <br />
+        <span class="task3Question">How can it occur?</span>
+        <br />
+        Insecure Design can occur when security is not considered during the design and architectural phases of the
+        application's development.
+        <br />
+        <span class="task3Question">How to prevent it?</span>
+        <br />
+        To prevent Insecure Design, security should be considered during all phases of the application's development
+        lifecycle.
+        <br /><br />
+        <span class="task3Source">Source:
+          <a href="https://owasp.org/Top10/A04_2021-Insecure_Design/"
+            target="_blank">https://owasp.org/Top10/A04_2021-Insecure_Design/</a>
+        </span>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <span class="task3AttackName">Security Misconfiguration</span>
+        <br />
+        <img src="Security Misconfiguration.png" alt="Security Misconfiguration Image" />
+        <!-- Image Source = https://owasp.org/Top10/assets/TOP_10_Icons_Final_Security_Misconfiguration.png -->
+        <br />
+        <span class="task3Source">Source:
+          <a href="https://owasp.org/Top10/A05_2021-Security_Misconfiguration/" target="_blank">Security
+            Misconfiguration</a>
+        </span>
+      </td>
+      <td>
+        <span class="task3Question">What is it?</span>
+        <br />
+        Security Misconfiguration is a security vulnerability whereby an application has not been configured with the
+        appropriate parameters.
+        <br />
+        <span class="task3Question">How can it occur?</span>
+        <br />
+        Security Misconfiguration can occur when an application has not been properly hardened during configuration.
+        <br />
+        <span class="task3Question">How to prevent it?</span>
+        <br />
+        To prevent Security Misconfiguration, ensure that the application has been properly hardened with the
+        appropriate security controls during configuration.
+        <br /><br />
+        <span class="task3Source">Source:
+          <a href="https://owasp.org/Top10/A05_2021-Security_Misconfiguration/"
+            target="_blank">https://owasp.org/Top10/A05_2021-Security_Misconfiguration/</a>
+        </span>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <span class="task3AttackName">Vulnerable and Outdated Components</span>
+        <br />
+        <img src="Vulnerable and Outdated Components.png" alt="Vulnerable and Outdated Components Image" />
+        <!-- Image Source = https://owasp.org/Top10/assets/TOP_10_Icons_Final_Vulnerable_Outdated_Components.png -->
+        <br />
+        <span class="task3Source">Source:
+          <a href="https://owasp.org/Top10/A06_2021-Vulnerable_and_Outdated_Components/" target="_blank">Vulnerable and
+            Outdated Components</a>
+        </span>
+      </td>
+      <td>
+        <span class="task3Question">What is it?</span>
+        <br />
+        Vulnerable and Outdated Components is a security vulnerability in which the application uses components that are
+        not up-to-date.
+        <br />
+        <span class="task3Question">How can it occur?</span>
+        <br />
+        Vulnerable and Outdated Components can occur when the application uses components that are not up-to-date.
+        <br />
+        <span class="task3Question">How to prevent it?</span>
+        <br />
+        To prevent Vulnerable and Outdated Components, ensure that all components used in the application are
+        up-to-date.
+        <br /><br />
+        <span class="task3Source">Source:
+          <a href="https://owasp.org/Top10/A06_2021-Vulnerable_and_Outdated_Components/"
+            target="_blank">https://owasp.org/Top10/A06_2021-Vulnerable_and_Outdated_Components/</a>
+        </span>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <span class="task3AttackName">Identification and Authentication Failures</span>
+        <br />
+        <img src="Identification and Authentication Failures.png"
+          alt="Identification and Authentication Failures Image" />
+        <!-- Image Source = https://owasp.org/Top10/assets/TOP_10_Icons_Final_Identification_and_Authentication_Failures.png -->
+        <br />
+        <span class="task3Source">Source:
+          <a href="https://owasp.org/Top10/A07_2021-Identification_and_Authentication_Failures/"
+            target="_blank">Identification and Authentication Failures</a>
+        </span>
+      </td>
+      <td>
+        <span class="task3Question">What is it?</span>
+        <br />
+        Identification and Authentication Failures is a security vulnerability when a user is not properly identified
+        and authenticated as another user.
+        <br />
+        <span class="task3Question">How can it occur?</span>
+        <br />
+        Identification and Authentication Failures can occur when a user is identified as another user and granted
+        access to the incorrect user's account.
+        <br />
+        <span class="task3Question">How to prevent it?</span>
+        <br />
+        To prevent Identification and Authentication Failures, multi-factor authentication can be implemented.
+        <br /><br />
+        <span class="task3Source">Source:
+          <a href="https://owasp.org/Top10/A07_2021-Identification_and_Authentication_Failures/"
+            target="_blank">https://owasp.org/Top10/A07_2021-Identification_and_Authentication_Failures/</a>
+        </span>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <span class="task3AttackName">Software and Data Integrity Failures</span>
+        <br />
+        <img src="Software and Data Integrity Failures.png" alt="Software and Data Integrity Failures Image" />
+        <!-- Image Source = https://owasp.org/Top10/assets/TOP_10_Icons_Final_Software_and_Data_Integrity_Failures.png -->
+        <br />
+        <span class="task3Source">Source:
+          <a href="https://owasp.org/Top10/A08_2021-Software_and_Data_Integrity_Failures/" target="_blank">Software and
+            Data Integrity Failures</a>
+        </span>
+      </td>
+      <td>
+        <span class="task3Question">What is it?</span>
+        <br />
+        Software and Data Integrity Failures is a security vulnerability when an application's infrastructure and code
+        do
+        not protect against security violations.
+        <br />
+        <span class="task3Question">How can it occur?</span>
+        <br />
+        Software and Data Integrity Failures can occur when the received data is not validated and verified.
+        <br />
+        <span class="task3Question">How to prevent it?</span>
+        <br />
+        To prevent Software and Data Integrity Failures, data should be validated and verified using mechanisms such as
+        checksums and digital signatures.
+        <br /><br />
+        <span class="task3Source">Source:
+          <a href="https://owasp.org/Top10/A08_2021-Software_and_Data_Integrity_Failures/"
+            target="_blank">https://owasp.org/Top10/A08_2021-Software_and_Data_Integrity_Failures/</a>
+        </span>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <span class="task3AttackName">Security Logging and Monitoring Failures</span>
+        <br />
+        <img src="Security Logging and Monitoring Failures.png" alt="Security Logging and Monitoring Failures Image" />
+        <!-- Image Source = https://owasp.org/Top10/assets/TOP_10_Icons_Final_Security_Logging_and_Monitoring_Failures.png -->
+        <br />
+        <span class="task3Source">Source:
+          <a href="https://owasp.org/Top10/A09_2021-Security_Logging_and_Monitoring_Failures/" target="_blank">Security
+            Logging and Monitoring Failures</a>
+        </span>
+      </td>
+      <td>
+        <span class="task3Question">What is it?</span>
+        <br />
+        Security Logging and Monitoring Failures is a security vulnerability that allows security breaches to be missed
+        due to insufficient logging and monitoring.
+        <br />
+        <span class="task3Question">How can it occur?</span>
+        <br />
+        Security Logging and Monitoring Failures can occur when there is insufficient logging and monitoring for
+        security-related events.
+        <br />
+        <span class="task3Question">How to prevent it?</span>
+        <br />
+        To prevent Security Logging and Monitoring Failures, ensure that all security-related events are logged and
+        monitored.
+        <br /><br />
+        <span class="task3Source">Source:
+          <a href="https://owasp.org/Top10/A09_2021-Security_Logging_and_Monitoring_Failures/"
+            target="_blank">https://owasp.org/Top10/A09_2021-Security_Logging_and_Monitoring_Failures/</a>
+        </span>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <span class="task3AttackName">Server-Side Request Forgery</span>
+        <br />
+        <img src="Server-Side Request Forgery.png" alt="Server-Side Request Forgery Image" />
+        <!-- Image Source = https://owasp.org/Top10/assets/TOP_10_Icons_Final_SSRF.png -->
+        <br />
+        <span class="task3Source">Source:
+          <a href="https://owasp.org/Top10/A10_2021-Server-Side_Request_Forgery_%28SSRF%29/" target="_blank">Server Side
+            Request Forgery</a>
+        </span>
+      </td>
+      <td>
+        <span class="task3Question">What is it?</span>
+        <br />
+        Server-Side Request Forgery is a security vulnerability where an application does not validate a user-supplied
+        URL when fetching a remote resource.
+        <br />
+        <span class="task3Question">How can it occur?</span>
+        <br />
+        Server-Side Request Forgery can occur when an application does not validate a user-supplied URL when fetching a
+        remote resource.
+        <br />
+        <span class="task3Question">How to prevent it?</span>
+        <br />
+        To prevent Server-Side Request Forgery, ensure that all user-supplied URLs are validated before fetching a
+        remote resource.
+        <br /><br />
+        <span class="task3Source">Source:
+          <a href="https://owasp.org/Top10/A10_2021-Server-Side_Request_Forgery_%28SSRF%29/"
+            target="_blank">https://owasp.org/Top10/A10_2021-Server-Side_Request_Forgery_%28SSRF%29/</a>
+        </span>
+      </td>
+    </tr>
+  </table>
+
+  <!-- Task 4 HTML below -->
+
+  <h1 class="taskHead">Task 4</h1>
+
+  <button class="task4Button" id="task4CatButton" onclick="task4CatButtonClicked();">Cat</button>
+  <button class="task4Button" id="task4DogButton" onclick="task4DogButtonClicked();">Dog</button>
+  <button class="task4Button" id="task4FrogButton" onclick="task4FrogButtonClicked();">Frog</button>
+  <br /><br />
+  <input id="task4Input" type="text">
+  <br /><br />
+  <span id="task4Text"></span>
+  <br /><br />
+  <img id="task4Image" />
+
+  <!-- Task 5 HTML below -->
+
+  <h1 class="taskHead">Task 5</h1>
+
+  <p>Report link: <a href="" target="_blank"></a> </p>
+</body>
+
+</html>
