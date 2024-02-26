@@ -30,6 +30,8 @@
       var task4Input = document.getElementById("task4Input");
       var task4Text = document.getElementById("task4Text");
       var task4Image = document.getElementById("task4Image");
+      var task4ImageSource = document.getElementById("task4ImageSource");
+      var task4ImageUrl = document.getElementById("task4ImageUrl");
 
       if (task4ClickedButton == "cat") {
         task4CatButton.style.backgroundColor = "indigo";
@@ -43,6 +45,10 @@
         task4Text.innerHTML = "Cat is clicked";
         task4Image.src = "Cat.png"; // Generated using Microsoft Bing AI. Source = https://copilot.microsoft.com/images/create/a-cat/1-65dc135a8f054080b30c136512ce14fd?id=RPwZq38O4PXN9U%2B6V9U4%2FQ%3D%3D&view=detailv2&idpp=genimg&idpclose=1&thId=OIG4.1dkkOweEAbCchTDitizU&ineditshare=1
         task4Image.alt = "Cat Image";
+
+        task4ImageSource.innerHTML = "Source: ";
+        task4ImageUrl.innerHTML = "https://copilot.microsoft.com/images/create/a-cat/1-65dc135a8f054080b30c136512ce14fd?id=RPwZq38O4PXN9U%2B6V9U4%2FQ%3D%3D&view=detailv2&idpp=genimg&idpclose=1&thId=OIG4.1dkkOweEAbCchTDitizU&ineditshare=1";
+        task4ImageUrl.href = "https://copilot.microsoft.com/images/create/a-cat/1-65dc135a8f054080b30c136512ce14fd?id=RPwZq38O4PXN9U%2B6V9U4%2FQ%3D%3D&view=detailv2&idpp=genimg&idpclose=1&thId=OIG4.1dkkOweEAbCchTDitizU&ineditshare=1";
       }
       else if (task4ClickedButton == "dog") {
         task4CatButton.style.backgroundColor = "";
@@ -56,6 +62,10 @@
         task4Text.innerHTML = "Dog is clicked";
         task4Image.src = "Dog.png"; // Generated using Microsoft Bing AI. Source = https://copilot.microsoft.com/images/create/a-cute-puppy/1-65dc1473905345feaf62875832b13300?id=nAkIFQKElM7FBGn2zt7wLg%3D%3D&view=detailv2&idpp=genimg&idpclose=1&thId=OIG2.dAEw0ukr9Dvqh6ynS.rV&ineditshare=1
         task4Image.alt = "Dog Image";
+
+        task4ImageSource.innerHTML = "Source: ";
+        task4ImageUrl.innerHTML = "https://copilot.microsoft.com/images/create/a-cute-puppy/1-65dc1473905345feaf62875832b13300?id=nAkIFQKElM7FBGn2zt7wLg%3D%3D&view=detailv2&idpp=genimg&idpclose=1&thId=OIG2.dAEw0ukr9Dvqh6ynS.rV&ineditshare=1";
+        task4ImageUrl.href = "https://copilot.microsoft.com/images/create/a-cute-puppy/1-65dc1473905345feaf62875832b13300?id=nAkIFQKElM7FBGn2zt7wLg%3D%3D&view=detailv2&idpp=genimg&idpclose=1&thId=OIG2.dAEw0ukr9Dvqh6ynS.rV&ineditshare=1";
       }
       else if (task4ClickedButton == "frog") {
         task4CatButton.style.backgroundColor = "";
@@ -69,6 +79,10 @@
         task4Text.innerHTML = "Frog is clicked";
         task4Image.src = "Frog.png"; // Generated using Microsoft Bing AI. Source = https://copilot.microsoft.com/images/create/a-frog/1-65dc14ff1a4d48ccb4c7e1a69f6ef8c5?id=btFKUT84azSp7xbM0QwpaQ%3D%3D&view=detailv2&idpp=genimg&idpclose=1&thId=OIG2.qihBF0W6wp7SMvkJCMVG&ineditshare=1
         task4Image.alt = "Frog Image";
+
+        task4ImageSource.innerHTML = "Source: ";
+        task4ImageUrl.innerHTML = "https://copilot.microsoft.com/images/create/a-frog/1-65dc14ff1a4d48ccb4c7e1a69f6ef8c5?id=btFKUT84azSp7xbM0QwpaQ%3D%3D&view=detailv2&idpp=genimg&idpclose=1&thId=OIG2.qihBF0W6wp7SMvkJCMVG&ineditshare=1";
+        task4ImageUrl.href = "https://copilot.microsoft.com/images/create/a-frog/1-65dc14ff1a4d48ccb4c7e1a69f6ef8c5?id=btFKUT84azSp7xbM0QwpaQ%3D%3D&view=detailv2&idpp=genimg&idpclose=1&thId=OIG2.qihBF0W6wp7SMvkJCMVG&ineditshare=1";
       }
     }
   </script>
@@ -200,6 +214,21 @@
       font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
       font-size: 17px;
     }
+
+    #task4ImageSource,
+    #task4ImageUrl {
+      font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+      font-size: 15px;
+      font-style: italic;
+    }
+
+    /* Task 5 CSS below */
+
+    .task5 {
+      font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+      font-size: 20px;
+      font-weight: bold;
+    }
   </style>
 </head>
 
@@ -212,7 +241,7 @@
   <h1 class="taskHead">Task 1</h1>
 
   <div class="task1Div">
-    <h2 id="task1Head1">5477050 Rajika Subasinghe Arachchige</h2>
+    <h2 id="task1Head1">5477050 - Rajika Subasinghe Arachchige</h2>
     <h2 id="task1Head2">COMP804: Web Security</h2>
     <h2 id="task1Head3">Assignment 1, due at the end of Week 5</h2>
   </div>
@@ -632,12 +661,25 @@
   <span id="task4Text"></span>
   <br /><br />
   <img id="task4Image" />
+  <br /><br />
+  <span id="task4ImageSource"></span>
+  <a id="task4ImageUrl" target="_blank"></a>
 
   <!-- Task 5 HTML below -->
 
   <h1 class="taskHead">Task 5</h1>
 
-  <p>Report link: <a href="" target="_blank"></a> </p>
+  <p class="task5">GitHub Repository Link:
+    <a href="https://github.com/97rajika/COMP804_A3_A1" target="_blank">
+      https://github.com/97rajika/COMP804_A3_A1
+    </a>
+  </p>
+  <p class="task5">Report Link:
+    <a href="https://github.com/97rajika/COMP804_A3_A1/blob/666772efec2292444f7704ecbff66b17c9b569dc/Task%205%20Report.pdf"
+      target="_blank">
+      https://github.com/97rajika/COMP804_A3_A1/blob/666772efec2292444f7704ecbff66b17c9b569dc/Task%205%20Report.pdf
+    </a>
+  </p>
 </body>
 
 </html>
